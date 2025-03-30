@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+
+    <!--ordered list-->
+    <h2>An ordered list with roman numerals</h2>
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol>
+
+    <!--external image-->
+    <h2>An external image from pexels.com</h2>
+    <img src="https://images.pexels.com/photos/31346973/pexels-photo-31346973/free-photo-of-misty-lake-scene-with-overhanging-branches.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image from pexels.com" width="300" height="200">
+    
+    <!--table-->
+    <h2>Below is a table:</h2>
+    <table border="1"  cellpadding="4" cellspacing="0" style="border-collapse: collapse; width: 50%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address></th>
+                <th>Mobile</th>
+                <th>Emails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mercy</td>
+                <td>0001-2002</td>
+                <td>0712345678</td>
+                <td>m@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Njeri</td>
+                <td>0002-2001</td>
+                <td>0733456789</td>
+                <td>n@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Andrew</td>
+                <td>0003-2011</td>
+                <td>2148034567</td>
+                <td>andrew@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Cecilia</td>
+                <td>4560-9650</td>
+                <td>8412379365</td>
+                <td>cec21@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Claudia</td>
+                <td>1863-1451</td>
+                <td>0722133146</td>
+                <td>claudia01@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--form-->
+    <h2>Below is a registration form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select><br><br>
+
+        <label>Subscription:</label><br>
+        <input type="radio" id="free" name="subscription" value="free" required>
+        <label for="free">Free</label><br>
+        <input type="radio" id="premium" name="subscription" value="premium">
+        <label for="premium">Premium</label><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"  placeholder="Enter your password" required><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <input type="submit" value="Register"><br><br>
+
+        <input type="reset" value="Reset"><br><br>
+    </form>
+</body>
+</html>
